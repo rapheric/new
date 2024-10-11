@@ -1,7 +1,7 @@
 
+import WorkOnProgress from "../../pages/workOnProgress/workOnProgress";
 import ServicesPage from "../services/servicePage";
 import UsersPage from "../Users/usersPage";
-import DevOnProgress from "../workOnProgress/devOnprogress";
 
 interface ContentProps {
   activeItem: string;
@@ -17,17 +17,17 @@ const UserContent: React.FC<ContentProps> = ({ activeItem }) => {
       case 'Services':
         return <ServicesPage/>;
       case 'Settings':
-        return <DevOnProgress/>;
+        return <WorkOnProgress/>;
       case 'Microservices':
-        return <DevOnProgress/>;
+        return <WorkOnProgress/>;
       case 'Products':
-        return <DevOnProgress/>;
+        return <WorkOnProgress/>;
       case 'Microservices':
-        return <DevOnProgress/>;
+        return <WorkOnProgress/>;
       case 'E-commerce':
-        return <DevOnProgress/>;
+        return <WorkOnProgress/>;
         case 'Analytics':
-            return <DevOnProgress/>;
+            return <WorkOnProgress/>;
       default:
         return <div>Select an item from the sidebar</div>;
     }

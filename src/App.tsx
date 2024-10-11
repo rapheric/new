@@ -6,9 +6,8 @@ import MarketPlace from './pages/marketplace/marketPlace';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import DashLayout from './admin/Layout/dashboardLayout';
-
-
-
+import ServicesPage from './admin/services/servicePage';
+import UsersPage from './admin/Users/usersPage';
 
 function App() {
   return (
@@ -18,8 +17,10 @@ function App() {
           <Route path="/" element={<Landing />} />
           <Route path="/workOnProgress" element={<WorkOnProgress />} />
           <Route path="/auth/*" element={<AuthNavigation />} />
-          <Route path="/marketPlace" element={<MarketPlace/>} />
-          <Route path="/dashboardLayout" element={<DashLayout/>} />
+          <Route path="/marketPlace" element={<MarketPlace />} />
+          <Route path="/dashboardLayout" element={<DashLayout />} />
+          <Route path="servicePage" element={<ServicesPage />} />
+          <Route path="usersPage" element={< UsersPage/>} />
         </Routes>
       </BrowserRouter>
     </>

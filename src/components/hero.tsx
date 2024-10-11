@@ -1,4 +1,4 @@
-import DashLayout from "../admin/Layout/dashboardLayout"
+
 import Feature from "./heroComponents/feature"
 import Logistic from "./heroComponents/logistics"
 import Objective from "./heroComponents/objective"
@@ -11,7 +11,6 @@ const Hero = () => {
           <Feature/>
           <Logistic/>
           <Objective/>
-          <DashLayout/>
         </div>
     )
 }

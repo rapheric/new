@@ -1,28 +1,33 @@
 
-import { Link } from 'react-router-dom';
 
-const AdminSidebar = () => {
+interface SidebarProps {
+  setActiveItem: (item: string) => void;
+}
+
+const AdminSidebar:React.FC<SidebarProps> = ({setActiveItem}) => {
+
+
   const menuItems = [
-    { name: 'Dashboard', path: '/' },
-    { name: 'Users', path: '/users' },
-    { name: 'Services', path: '/services' },
-    { name: 'Settings', path: '/settings' },
-    { name: 'Microservices', path: '/microservices' },
-    { name: 'Products', path: '/products' },
-    { name: 'Analytics', path: '/analytics' },
-    { name: 'E-commerce', path: '/ecommerce' },
+    { name: 'Dashboard'},
+    { name: 'Users' },
+    { name: 'Services' },
+    { name: 'Settings',  },
+    { name: 'Microservices',  },
+    { name: 'Products' },
+    { name: 'Analytics' },
+    { name: 'E-commerce' },
   ];
 
   return (
     <aside className="w-64 bg-gray-800 text-white h-screen">
       <div className="p-5">
-        <h1 className="text-lg font-bold">Admin Dashboard</h1>
+        <h1 className="text-lg font-bold">DLMP</h1>
       </div>
       <nav>
         <ul>
           {menuItems.map((item) => (
-            <li key={item.name} className="p-4 hover:bg-gray-700">
-              <Link to={item.path}>{item.name}</Link>
+            <li key={item.name}  onClick={() => setActiveItem(item.name)} className="p-4 hover:bg-gray-700" >
+             {item.name} 
             </li>
           ))}
         </ul>

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Table, Modal } from "antd";
-import { serviceData } from "../../admin/services/serviceData";
+import { serviceData } from "./serviceData";
 import UpDateServiceModal from "./upDateServiceModal";
 import ServiceActions from "./serviceActions";
 

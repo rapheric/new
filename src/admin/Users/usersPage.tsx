@@ -5,7 +5,7 @@ import React, { useState } from "react";
 import { FaUserShield,  } from "react-icons/fa";
 import { Table, Modal } from "antd"; 
 import "antd/dist/reset.css"; 
-import { userData } from "../../admin/Users/usersData";
+import { userData } from "./usersData";
 import UserActions from "./userActions";
 import UpDateUserModal from "./upDateUserModal";
 import UserNavButton from "./userNavButton"

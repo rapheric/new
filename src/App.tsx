@@ -8,6 +8,7 @@ import "slick-carousel/slick/slick-theme.css";
 import DashLayout from './admin/Layout/dashboardLayout';
 import ServicesPage from './admin/services/servicePage';
 import UsersPage from './admin/Users/usersPage';
+import DevOnProgress from './admin/workOnProgress/DevOnprogress';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Landing />} />
           <Route path="/workOnProgress" element={<WorkOnProgress />} />
+          <Route path="/devOnProgress" element={<DevOnProgress />} />
           <Route path="/auth/*" element={<AuthNavigation />} />
           <Route path="/marketPlace" element={<MarketPlace />} />
           <Route path="/dashboardLayout" element={<DashLayout />} />

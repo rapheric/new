@@ -1,16 +1,21 @@
 
-import { Link } from 'react-router-dom';
 
-const AdminSidebar = () => {
+interface SidebarProps {
+  setActiveItem: (item: string) => void;
+}
+
+const AdminSidebar:React.FC<SidebarProps> = ({setActiveItem}) => {
+
+
   const menuItems = [
-    { name: 'Dashboard', path: '/' },
-    { name: 'Users', path: '/usersPage' },
-    { name: 'Services', path: '/servicePage' },
-    { name: 'Settings', path: '/settings' },
-    { name: 'Microservices', path: '/microservices' },
-    { name: 'Products', path: '/products' },
-    { name: 'Analytics', path: '/analytics' },
-    { name: 'E-commerce', path: '/ecommerce' },
+    { name: 'Dashboard'},
+    { name: 'Users' },
+    { name: 'Services' },
+    { name: 'Settings',  },
+    { name: 'Microservices',  },
+    { name: 'Products' },
+    { name: 'Analytics' },
+    { name: 'E-commerce' },
   ];
 
   return (
@@ -21,8 +26,8 @@ const AdminSidebar = () => {
       <nav>
         <ul>
           {menuItems.map((item) => (
-            <li key={item.name} className="p-4 hover:bg-gray-700">
-              <Link to={item.path}>{item.name}</Link>
+            <li key={item.name}  onClick={() => setActiveItem(item.name)} className="p-4 hover:bg-gray-700" >
+             {item.name} 
             </li>
           ))}
         </ul>

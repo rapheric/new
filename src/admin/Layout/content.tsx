@@ -11,7 +11,7 @@ const UserContent: React.FC<ContentProps> = ({ activeItem }) => {
   const renderContent = () => {
     switch (activeItem) {
       case 'Dashboard':
-        return <div>Admin DashBoard</div>
+        return <div>Dashboard</div>
       case 'Users':
         return <UsersPage/>;
       case 'Services':

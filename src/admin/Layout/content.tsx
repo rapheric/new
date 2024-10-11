@@ -21,7 +21,7 @@ const UserContent: React.FC<ContentProps> = ({ activeItem }) => {
       case 'Microservices':
         return <DevOnProgress/>;
       case 'Products':
-        return <DevOnProgress/>;
+        return <ServicesPage/>;
       case 'Microservices':
         return <DevOnProgress/>;
       case 'E-commerce':

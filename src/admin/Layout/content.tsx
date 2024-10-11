@@ -1,7 +1,7 @@
 
 import ServicesPage from "../services/servicePage";
 import UsersPage from "../Users/usersPage";
-import DevOnProgress from "../workOnProgress/DevOnprogress";
+import DevOnProgress from "../workOnProgress/devOnprogress";
 
 interface ContentProps {
   activeItem: string;

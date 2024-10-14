@@ -1,7 +1,4 @@
 import React, { useState } from "react";
-// FaUserAlt
-// FaUserTie,
-// FaUsers
 import { FaUserShield,  } from "react-icons/fa";
 import { Table, Modal } from "antd"; 
 import "antd/dist/reset.css"; 
@@ -112,7 +109,6 @@ const UsersPage: React.FC = () => {
   return (
     <div className="mx-auto p-5">
       <h1 className="text-2xl font-bold mb-5">{title}</h1>
-
       <div className="flex space-x-4 mb-8">
         {
           userTypes.map((userType, index) => <UserNavButton

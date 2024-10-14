@@ -15,7 +15,7 @@ const Solution = () => {
                         <div className="flex items-center">
                             <h1 className="text-4xl font-extrabold text-white  mb-5 text-center ">Our solutions</h1>
                         </div>
-                        <div className="w-full flex flex-col  gap-4 mx-auto mb-12   ">
+                        <div className="w-full flex flex-col  gap-4 mx-auto mb-4 md:mb-12   ">
                             {
                                 solutionsData.map((solution, index) => (
                                     <SolutionCard

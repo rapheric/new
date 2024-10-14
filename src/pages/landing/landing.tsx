@@ -4,7 +4,7 @@ import Navbar from "../../components/navbar"
 
 const Landing = () => {
     return (
-        <div>
+        <div >
             <Navbar />
             <Hero/>
             <Footer/>

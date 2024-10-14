@@ -7,7 +7,7 @@ const Feature = () => {
             <div className="flex items-center">
                 <h1 className="text-4xl font-extrabold text-gray-900 text-center mb-12 animate-fade-in">Our Key Features</h1>
             </div>
-            <div className="w-full max-w-7xl grid grid-cols-4 bg-gray-300  gap-4 mx-auto mb-12   ">
+            <div className="w-full max-w-7xl grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 bg-gray-300  gap-4 mx-auto mb-12   ">
 
                 {
                     featuresData.map((feature, index) => (

@@ -98,7 +98,7 @@ const ServicesPage: React.FC = () => {
   ];
 
   return (
-    <div className="mx-auto p-5">
+    <div className="mx-auto w-full overflow-x-scroll p-5">
       <Table
         columns={columns} dataSource={filteredServices} rowKey="id" pagination={false}
       />

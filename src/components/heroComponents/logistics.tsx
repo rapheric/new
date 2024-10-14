@@ -2,7 +2,7 @@ import { FaArrowRight } from "react-icons/fa"
 
 const Logistic = () => {
     return (
-        <section className="w-full bg-blue-950 h-[360px] my-25">
+        <section className="w-full bg-blue-950 h-auto my-25">
             <div className="flex items-center justify-between  max-w-7xl  gap-3 p-4 mx-auto ">
                 <div className="flex flex-col py-2 items-start flex-1">
                     <h1 className="text-orange-600 font-bold text-2xl my-3 items-start">Digital logistics marketplace platform</h1>

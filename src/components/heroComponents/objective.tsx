@@ -7,7 +7,7 @@ const Objective = () => {
             <div className="flex items-center">
                 <h1 className="text-4xl font-extrabold text-gray-900 text-center mb-12 ">Our Objectives</h1>
             </div>
-            <div className="w-full max-w-7xl grid grid-cols-3 bg-gray-300  gap-4 mx-auto mb-12   ">
+            <div className="w-full max-w-7xl grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 bg-gray-300  gap-4 mx-auto mb-12   ">
 
                 {
                     objectivesData.map((objective, index) => (

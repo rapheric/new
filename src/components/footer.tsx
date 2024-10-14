@@ -49,8 +49,8 @@ const socialMediaLinks = [
 const Footer: React.FC = () => {
   return (
     <div className="w-full">
-    <footer className= "bg-gray-800 text-white py-10 px-[15px]">
-      <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-10 max-w-7xl w-full">
+    <footer className= "bg-gray-800 text-white py-10 px-4">
+      <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-10 max-w-7xl w-full">
         <div className="flex flex-col gap-10">
           <div>
             <h2 className="text-2xl font-bold mb-4">D L M P</h2>
@@ -111,7 +111,7 @@ const Footer: React.FC = () => {
           </ul>
         </div>
 
-        <div>
+        <div className="">
           <h3 className="text-xl font-semibold mb-4">
             Sign Up for Our Newsletter
           </h3>

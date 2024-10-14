@@ -15,15 +15,15 @@ const RegisterPage = () => {
   const navigate = useNavigate()
 
   return (
-    <div className="w-full h-[100vh]   bg-white flex flex-col items-center py-[20px] ">
-      <h1 className="text-4xl">
+    <div className="w-full overflow-y-scroll h-[90vh] md:h-[100vh]  bg-white flex flex-col items-center py-3 md:py-5 ">
+      <h1 className="text-xl md:text-4xl">
         <span className=" font-bold mr-4 text-gray-700">Registration</span>
         <span> Form</span>
       </h1>
       <section className="flex flex-row w-2/3  bg-gray-300 shadow-lg mt-3 rounded-[20px] ">
-        <div className="w-1/2 p-3 ">
+        <div className=" w-full md:w-1/2 p-3 ">
           <h3 className="text-xl font-bold text-stone-600">DLMP</h3>
-          <h2 className=" text-4xl text-stone-700 mt-3">
+          <h2 className=" text-xl md:text-4xl text-stone-700 mt-3">
             Register to continue
           </h2>
           <section className="mt-3 flex flex-col pr-10">
@@ -97,7 +97,7 @@ const RegisterPage = () => {
           </p>
         </div>
 
-        <div className="w-1/2">
+        <div className="hidden md:w-1/2 md:block">
           <img
             src={sideBarImage}
             className="w-full h-full object-cover rounded-[20px]"

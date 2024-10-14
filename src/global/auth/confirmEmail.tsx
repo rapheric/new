@@ -11,15 +11,15 @@ const ConfirmEmail = () => {
     const navigate = useNavigate()
 
     return (
-        <div className="w-full h-screen overflow-y-scroll flex flex-col items-center py-[100px] ">
+        <div className="w-full h-screen overflow-y-scroll flex flex-col items-center py-16 md:py-25 ">
             <h1 className="text-4xl">
-                <span className=" font-extrabold mr-4">Validate</span>
+                <span className="font-bold md:font-extrabold mr-4">Validate</span>
                 <span>Email</span>
             </h1>
             <section className="flex flex-row items-center w-2/3 bg-slate-200 shadow-lg mt-3 rounded-[20px] ">
-                <div className="w-1/2 p-10">
+                <div className="w-full md:w-1/2 p-10">
                     <h3 className="text-xl font-bold text-stone-600">DLMP</h3>
-                    <h2 className=" text-4xl text-stone-700 mt-5">Enter email code sent</h2>
+                    <h2 className="text-xl md:text-4xl text-stone-700 mt-5">Enter email code sent</h2>
                     <section className="mt-5 flex flex-col pr-10">
                         <FullInput title="code" value={textCode} callBack={(e:any) => { setTextCode(e.target.value) }} inputType="text" />
                     </section>
@@ -29,7 +29,7 @@ const ConfirmEmail = () => {
                     <RoundButton bgColor="bg-cyan-500" width="full" title="Confirm code" callBack={() => { navigate("/auth/login") }} textColor="stone-600" icon={<></>} />
                 </div>
 
-                <div className="w-1/2">
+                <div className="hidden md:block w-1/2">
                     <img src={sideBarImage} className="w-full h-full object-cover rounded-[20px]" />
                 </div>
             </section>

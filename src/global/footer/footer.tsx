@@ -3,9 +3,7 @@ import { FaFacebook } from "react-icons/fa";
 import { RiWhatsappFill } from "react-icons/ri";
 import { FaSquareInstagram } from "react-icons/fa6";
 import { BsTwitterX } from "react-icons/bs";
-// import { MdEmail } from "react-icons/md";
 
-// Data for useful links
 const usefulLinks = [
   { name: "Start Here", path: "/start-here" },
   { name: "Blogs", path: "/blogs" },
@@ -15,7 +13,6 @@ const usefulLinks = [
   { name: "Demo Account", path: "/demo-account" },
 ];
 
-// Data for information links
 const informationLinks = [
   { name: "Products", path: "/products" },
   { name: "Membership Levels", path: "/membership-levels" },
@@ -26,7 +23,6 @@ const informationLinks = [
   { name: "Contact Us", path: "/contact" },
 ];
 
-// Data for social media icons
 const socialMediaLinks = [
   {
     icon: <FaFacebook className="fill-blue-600 text-3xl" />,
@@ -89,7 +85,6 @@ const Footer: React.FC = () => {
           </div>
         </div>
 
-        {/* Useful Links */}
         <div>
           <h3 className="text-xl font-semibold mb-4">Links</h3>
           <ul>
@@ -103,7 +98,6 @@ const Footer: React.FC = () => {
           </ul>
         </div>
 
-        {/* Information */}
         <div>
           <h3 className="text-xl font-semibold mb-4">Information</h3>
           <ul>
@@ -117,7 +111,6 @@ const Footer: React.FC = () => {
           </ul>
         </div>
 
-        {/* Newsletter Signup */}
         <div>
           <h3 className="text-xl font-semibold mb-4">
             Sign Up for Our Newsletter
@@ -139,7 +132,6 @@ const Footer: React.FC = () => {
         </div>
       </div>
 
-      {/* Footer Bottom */}
       <div className="border-t border-gray-00 mt-10 pt-6">
         <div className="container mx-auto flex justify-center items-center">
           <p className="text-base">
